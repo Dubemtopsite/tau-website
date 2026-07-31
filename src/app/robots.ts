@@ -1,0 +1,15 @@
+import type { MetadataRoute } from "next";
+import { siteConfig } from "@/constants/site";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/student-portal", "/staff-portal", "/downloads", "/api/"],
+      },
+    ],
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+  };
+}
