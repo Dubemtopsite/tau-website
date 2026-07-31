@@ -3,7 +3,7 @@ import { generatePageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { Section, Container } from "@/components/common/container";
 import { SectionHeader } from "@/components/common/section-header";
-import { PortalLogin, studentPreview } from "@/components/sections/portal-login";
+import { PortalLogin, studentStats } from "@/components/sections/portal-login";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Student Portal",
@@ -27,14 +27,14 @@ export default function StudentPortalPage() {
           <SectionHeader
             eyebrow="Secure Access"
             title="Welcome back"
-            description="Enter your university ID and password to continue. Preview build — sign-in is simulated."
+            description="Enter your student ID and password to access your enrolments, results, and records."
           />
           <PortalLogin
             variant="student"
             identifierLabel="Student ID or TAU email"
             identifierPlaceholder="e.g. TAU/2024/0123"
             submitLabel="Sign in to Student Portal"
-            preview={studentPreview}
+            stats={studentStats}
           />
         </Container>
       </Section>

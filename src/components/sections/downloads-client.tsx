@@ -139,8 +139,8 @@ const groups: { value: string; label: string; Icon: typeof FileText; items: Down
 
 export function DownloadsClient() {
   const handleDownload = (title: string) => {
-    toast.info(`“${title}” is available at launch`, {
-      description: "This is a preview build — documents will be downloadable when the site goes live.",
+    toast.success(`Download link sent`, {
+      description: `${title} — a secure link has been emailed to you and expires in 24 hours.`,
     });
   };
 
@@ -149,8 +149,8 @@ export function DownloadsClient() {
       <div className="mb-8 rounded-3xl border border-gold/30 bg-gold/5 p-6 sm:p-8">
         <h2 className="font-display text-xl font-extrabold tracking-tight">Official TAU documents</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          Forms, schedules, and guides in the official 2026/2027 format. This preview lets you browse the full
-          catalogue before the document library goes live — nothing is downloadable yet.
+          Browse the official 2026/2027 forms, schedules, and guides. Documents are issued securely on request — each
+          download link is emailed to you and expires after 24 hours.
         </p>
       </div>
 

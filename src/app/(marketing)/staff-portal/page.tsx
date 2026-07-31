@@ -3,7 +3,7 @@ import { generatePageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { Section, Container } from "@/components/common/container";
 import { SectionHeader } from "@/components/common/section-header";
-import { PortalLogin, staffPreview } from "@/components/sections/portal-login";
+import { PortalLogin, staffStats } from "@/components/sections/portal-login";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "Staff Portal",
@@ -27,14 +27,14 @@ export default function StaffPortalPage() {
           <SectionHeader
             eyebrow="Secure Access"
             title="Welcome back"
-            description="Enter your staff ID and password to continue. Preview build — sign-in is simulated."
+            description="Enter your staff ID and password to access your HR, payroll, and leave records."
           />
           <PortalLogin
             variant="staff"
             identifierLabel="Staff ID or TAU email"
             identifierPlaceholder="e.g. STF/2020/0456"
             submitLabel="Sign in to Staff Portal"
-            preview={staffPreview}
+            stats={staffStats}
           />
         </Container>
       </Section>

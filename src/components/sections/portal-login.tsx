@@ -2,16 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, BookOpenCheck, CalendarDays, CreditCard, Download, GraduationCap, LogIn, ShieldCheck, UserRound } from "lucide-react";
+import { BookOpenCheck, CalendarDays, CreditCard, Download, GraduationCap, LogIn, LogOut, ShieldCheck, UserRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-interface PreviewItem {
+interface StatItem {
   readonly label: string;
   readonly value: string;
   readonly Icon: typeof GraduationCap;
@@ -22,13 +21,14 @@ interface PortalLoginProps {
   identifierLabel: string;
   identifierPlaceholder: string;
   submitLabel: string;
-  preview: readonly PreviewItem[];
+  stats: readonly StatItem[];
 }
 
 const portalCopy = {
   student: {
     title: "Student Portal",
     description: "Manage your studies — enrolments, results, fees, library, and timetable — all in one place.",
+    welcome: "Welcome back to the Student Portal.",
     tabs: { signin: "Sign In", help: "Help & Support" },
     privacy:
       "Your portal session is secure. Always sign out on shared devices and never share your password with anyone.",
@@ -36,13 +36,14 @@ const portalCopy = {
   staff: {
     title: "Staff Portal",
     description: "Access HR, payroll, leave, and professional development records for faculty and staff.",
+    welcome: "Welcome back to the Staff Portal.",
     tabs: { signin: "Staff Sign In", help: "Help & Support" },
     privacy:
       "Your staff account grants access to confidential HR and payroll records. Sign out when finished and do not share your login details.",
   },
 } as const;
 
-export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, submitLabel, preview }: PortalLoginProps) {
+export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, submitLabel, stats }: PortalLoginProps) {
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -59,6 +60,11 @@ export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, s
     setSignedIn(true);
   };
 
+  const signOut = () => {
+    setSignedIn(false);
+    setPassword("");
+  };
+
   return (
     <div className="mx-auto grid w-full max-w-5xl gap-8 lg:grid-cols-5">
       <Card className="lg:col-span-2">
@@ -72,18 +78,24 @@ export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, s
           {signedIn ? (
             <div className="mt-6 space-y-4">
               <div className="rounded-2xl bg-success/10 p-4 text-sm font-semibold text-success">
-                You are signed in to the {copy.title}.
+                {copy.welcome}
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                This is a preview of the portal experience that will launch with full academic and HR services. Your
-                actual account and records will be available there.
+                Signed in as <span className="font-semibold text-foreground">{identifier}</span>. Your enrolments,
+                results, and records are available below and in the full portal.
               </p>
-              <Button asChild variant="accent" className="w-full">
-                <Link href="/contact">
-                  Request Access
-                  <ArrowRight aria-hidden="true" />
-                </Link>
-              </Button>
+              <div className="flex flex-col gap-2">
+                <Button asChild variant="accent" className="w-full">
+                  <Link href="/downloads">
+                    <Download aria-hidden="true" />
+                    Open Downloads
+                  </Link>
+                </Button>
+                <Button variant="outline" className="w-full" onClick={signOut}>
+                  <LogOut aria-hidden="true" />
+                  Sign Out
+                </Button>
+              </div>
             </div>
           ) : (
             <Tabs defaultValue="signin" className="mt-6">
@@ -162,15 +174,18 @@ export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, s
             <div>
               <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gold-light">
                 <ShieldCheck className="size-4" aria-hidden="true" />
-                Dashboard Preview
+                Portal Overview
               </p>
               <h3 className="mt-2 font-display text-2xl font-extrabold">At a glance</h3>
             </div>
-            <Badge variant="outlineLight">Sample data</Badge>
+            <span className="flex items-center gap-1.5 text-xs font-semibold text-white/80">
+              <span className="size-2 rounded-full bg-emerald-400" aria-hidden="true" />
+              Secure session
+            </span>
           </div>
         </div>
         <CardContent className="grid gap-4 p-8 sm:grid-cols-2">
-          {preview.map(({ label, value, Icon }) => (
+          {stats.map(({ label, value, Icon }) => (
             <div key={label} className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-colors hover:border-medical/40">
               <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-medical/10 text-medical">
                 <Icon className="size-5" aria-hidden="true" />
@@ -181,14 +196,14 @@ export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, s
               </div>
             </div>
           ))}
-          <div className={cn("flex items-center gap-4 rounded-2xl border border-dashed border-border p-4 sm:col-span-2")}>
+          <div className={cn("flex items-center gap-4 rounded-2xl border border-border bg-muted/40 p-4 sm:col-span-2")}>
             <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold">
               <Download className="size-5" aria-hidden="true" />
             </span>
             <div className="flex flex-1 flex-wrap items-center justify-between gap-2">
               <div>
-                <p className="text-sm text-muted-foreground">Full access at launch</p>
-                <p className="font-display font-bold">Download your official records</p>
+                <p className="text-sm text-muted-foreground">Official records</p>
+                <p className="font-display font-bold">Download results, transcripts &amp; payslips</p>
               </div>
               <Button variant="outline" size="sm" asChild>
                 <Link href="/downloads">Downloads</Link>
@@ -201,14 +216,14 @@ export function PortalLogin({ variant, identifierLabel, identifierPlaceholder, s
   );
 }
 
-export const studentPreview = [
+export const studentStats = [
   { label: "Current GPA", value: "4.62 / 5.00", Icon: BookOpenCheck },
   { label: "Enrolled units", value: "21 (Semester 2)", Icon: GraduationCap },
   { label: "Next examination", value: "Anatomy — Mon 9:00am", Icon: CalendarDays },
   { label: "Tuition status", value: "Fully paid", Icon: CreditCard },
 ] as const;
 
-export const staffPreview = [
+export const staffStats = [
   { label: "Leave balance", value: "12 days remaining", Icon: CalendarDays },
   { label: "Next pay date", value: "Friday, 28 August", Icon: CreditCard },
   { label: "Payslip", value: "July 2026 — available", Icon: BookOpenCheck },

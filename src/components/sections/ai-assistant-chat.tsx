@@ -85,7 +85,7 @@ export function AiAssistantChat() {
           </span>
           <div className="leading-tight">
             <p className="font-display font-bold">TAU Virtual Assistant</p>
-            <p className="text-xs text-white/70">University information · 24/7 · Preview build</p>
+            <p className="text-xs text-white/70">University information · Available 24/7</p>
           </div>
         </div>
 
@@ -168,7 +168,8 @@ export function AiAssistantChat() {
             </Button>
           </form>
           <p className="mt-2 text-center text-[11px] text-muted-foreground">
-            Preview assistant with simulated responses — connects to a real assistant service in the full launch.
+            The assistant provides general guidance based on official university information. For personal matters,
+            contact the relevant office directly.
           </p>
         </div>
       </div>
