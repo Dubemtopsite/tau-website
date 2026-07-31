@@ -26,7 +26,7 @@ const stories = [
 export default function InnovationPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/innovation-center.jpg"
         eyebrow="Innovation & Partnerships"
         title="From Lab to Life"
         description="We don't just publish — we translate. TAU innovations are changing practice in clinics and communities."

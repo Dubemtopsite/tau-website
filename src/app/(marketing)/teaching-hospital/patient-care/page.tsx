@@ -35,7 +35,7 @@ const services = [
 export default function PatientCarePage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/medical-clinic.svg"
         eyebrow="Patient Care"
         title="Planning Your Care"
         description="Clear, honest information so you know exactly what to expect — from your first call to your last follow-up."

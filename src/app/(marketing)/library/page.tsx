@@ -36,7 +36,7 @@ const stats = [
 export default function LibraryPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/campus-library.jpg"
         eyebrow="Medical Library"
         title="The Heart of Academic Life"
         description="A digital-first, 24/7 library built for deep study, groundbreaking research, and lifelong learning."

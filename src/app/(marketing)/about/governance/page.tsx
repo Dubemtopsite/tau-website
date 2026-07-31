@@ -26,7 +26,7 @@ const policyAreas = [
 export default function GovernancePage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Governance"
         title="Transparent Governance, Clear Policies"
         description="The committees, structures, and policies that ensure accountability and academic integrity at every level of the University."

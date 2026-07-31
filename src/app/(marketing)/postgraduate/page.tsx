@@ -64,7 +64,7 @@ export default function PostgraduatePage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Postgraduate School"
         title="Advanced Study for the Next Level"
         description="Master's degrees, doctorates, residencies, and fellowships that build on your passion for the health sciences."

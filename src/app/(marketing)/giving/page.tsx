@@ -27,7 +27,7 @@ const priorities = [
 export default function GivingPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Giving & Donations"
         title="Invest in the Future of Health"
         description="Your generosity changes lives — a scholarship, a microscope, a ward. Join the mission."

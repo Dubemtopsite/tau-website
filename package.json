@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "images": "node scripts/generate-images.mjs && node scripts/wire-hero-images.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.5.7",

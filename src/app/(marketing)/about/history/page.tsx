@@ -51,7 +51,7 @@ const milestones = [
 export default function HistoryPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="History"
         title="From Vision to World-Class Institution"
         description="The story of how Transatlantic University grew from a founder's dream into one of Nigeria's leading private medical universities."

@@ -32,7 +32,7 @@ const channels = [
 export default function ReferralsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-medical-building.jpg"
         eyebrow="Teaching Hospital"
         title="Referral Services"
         description="A fast, respectful pathway for clinicians referring patients to our consultant teams."

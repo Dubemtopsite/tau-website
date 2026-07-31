@@ -25,7 +25,7 @@ const initiatives = [
 export default function SustainabilityPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Sustainability"
         title="A Campus That Cares for Tomorrow"
         description="From solar power to water stewardship, TAU is building sustainability into the way the University operates."

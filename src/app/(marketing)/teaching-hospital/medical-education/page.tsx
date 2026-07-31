@@ -28,7 +28,7 @@ const programmes = [
 export default function MedicalEducationPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/simulation-lab.jpg"
         eyebrow="Teaching Hospital"
         title="Where Students Become Clinicians"
         description="Every consultation, theatre case, and ward round is a lesson at the Transatlantic Teaching Hospital."

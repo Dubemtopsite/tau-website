@@ -24,7 +24,7 @@ const support = [
 export default function ApplyPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Apply Now"
         title="Online Application Portal"
         description="Complete your application in under 10 minutes. Our admissions team will guide you through every step."

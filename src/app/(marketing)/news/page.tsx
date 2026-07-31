@@ -26,7 +26,7 @@ export default function NewsPage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/news-1.jpg"
         eyebrow="News & Updates"
         title="The TAU Chronicle"
         description="Milestones, research breakthroughs, and the people making TAU extraordinary."

@@ -27,7 +27,7 @@ const recognition = [
 export default function AccreditationsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Accreditations & Rankings"
         title="Recognition That Opens Doors"
         description="Full accreditation by Nigeria's national and professional regulatory bodies — so our degrees count everywhere."

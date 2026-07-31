@@ -28,7 +28,7 @@ const paymentMethods = [
 export default function TuitionPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Fees & Funding"
         title="Tuition & Scholarships"
         description="Transparent fees, generous scholarships, and flexible payment plans — because excellence should be accessible."

@@ -45,7 +45,7 @@ const offices = [
 export default function ContactPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Contact Us"
         title="We'd Love to Hear From You"
         description="Questions about admissions, research, patient care, or partnership? Our team replies within 24 hours."

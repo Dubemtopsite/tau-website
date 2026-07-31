@@ -32,7 +32,7 @@ export default function CareersPage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Careers"
         title="Build Your Career at TAU"
         description="Join Nigeria's fastest-growing university of medicine and health sciences."

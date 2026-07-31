@@ -36,7 +36,7 @@ const stats = [
 export default function ResearchPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/research-lab.jpg"
         eyebrow="Research & Innovation"
         title="Where Discovery Meets Care"
         description="TAU researchers are answering the health questions that matter most to Africa and the world."

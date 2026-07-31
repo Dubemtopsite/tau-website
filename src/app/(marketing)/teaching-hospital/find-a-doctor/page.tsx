@@ -15,7 +15,7 @@ export const metadata: Metadata = generatePageMetadata({
 export default function FindDoctorPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-medical-building.jpg"
         eyebrow="Teaching Hospital"
         title="Find a Doctor"
         description="Search our consultant physicians and surgeons by name, title, or speciality."

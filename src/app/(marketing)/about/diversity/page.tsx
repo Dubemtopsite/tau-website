@@ -25,7 +25,7 @@ const commitments = [
 export default function DiversityPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Diversity & Inclusion"
         title="A Community Where Everyone Belongs"
         description="At TAU, excellence is strengthened by difference. We are building a medical university that reflects — and serves — all of Africa."

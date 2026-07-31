@@ -57,7 +57,7 @@ const timeline = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="About TAU"
         title="Transatlantic University of Medicine and Health Sciences"
         description="A private medical institution in Umuchukwu, Anambra State, Nigeria — founded by Nigerian-American physician and philanthropist Dr. Godwin Maduka."

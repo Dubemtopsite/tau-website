@@ -31,7 +31,7 @@ const alumniStories = testimonials.filter((t) => t.type === "Alumni");
 export default function AlumniPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Alumni"
         title="The TAU Family, Forever"
         description="Our graduates are practising on every continent. Stay connected, give back, and grow with TAU."

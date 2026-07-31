@@ -35,7 +35,7 @@ export const clinicalDepartments: ClinicalDepartment[] = [
     services: ["Cardiology clinics", "Diabetes & endocrinology", "Stroke unit", "Gastroenterology", "Respiratory medicine"],
     consultants: 18,
     beds: 96,
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
     featured: true,
   },
   {
@@ -61,7 +61,7 @@ export const clinicalDepartments: ClinicalDepartment[] = [
     services: ["Neonatal ICU", "General paediatrics", "Paediatric emergency", "Growth & nutrition clinics"],
     consultants: 12,
     beds: 64,
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
   },
   {
     id: "obs-gyn",
@@ -73,7 +73,7 @@ export const clinicalDepartments: ClinicalDepartment[] = [
     services: ["Antenatal & maternity", "Labour ward", "Gynaecological surgery", "Family planning", "High-risk pregnancy"],
     consultants: 10,
     beds: 72,
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
   },
   {
     id: "radiology",
@@ -97,7 +97,7 @@ export const clinicalDepartments: ClinicalDepartment[] = [
     services: ["24/7 emergency care", "Resuscitation", "Trauma care", "Observation unit"],
     consultants: 8,
     beds: 32,
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
     featured: true,
   },
 ];
@@ -113,7 +113,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, MD (Cardiology), FWACP",
     experience: 19,
     availability: "Mon, Wed, Fri — 9:00 AM to 1:00 PM",
-    image: "/images/placeholders/doctor-1.jpg",
+    image: "/images/placeholders/doctor-1.svg",
   },
   {
     id: "doc-2",
@@ -125,7 +125,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, FMCS, FRCS (Edin)",
     experience: 15,
     availability: "Tue, Thu — 8:00 AM to 2:00 PM",
-    image: "/images/placeholders/doctor-2.jpg",
+    image: "/images/placeholders/doctor-2.svg",
   },
   {
     id: "doc-3",
@@ -137,7 +137,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, FWACP (Paediatrics)",
     experience: 12,
     availability: "Mon–Fri — 9:00 AM to 12:00 PM",
-    image: "/images/placeholders/doctor-3.jpg",
+    image: "/images/placeholders/doctor-3.svg",
   },
   {
     id: "doc-4",
@@ -149,7 +149,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, FWACS, FMCOG",
     experience: 22,
     availability: "Mon, Thu — 10:00 AM to 2:00 PM",
-    image: "/images/placeholders/doctor-1.jpg",
+    image: "/images/placeholders/doctor-1.svg",
   },
   {
     id: "doc-5",
@@ -161,7 +161,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, FWACS (Radiology)",
     experience: 11,
     availability: "Tue–Sat — 8:00 AM to 4:00 PM",
-    image: "/images/placeholders/doctor-2.jpg",
+    image: "/images/placeholders/doctor-2.svg",
   },
   {
     id: "doc-6",
@@ -173,7 +173,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, FWACP (Emergency Medicine)",
     experience: 9,
     availability: "Rotating 24/7 shifts",
-    image: "/images/placeholders/doctor-3.jpg",
+    image: "/images/placeholders/doctor-3.svg",
   },
   {
     id: "doc-7",
@@ -185,7 +185,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, FWACP (Nephrology)",
     experience: 14,
     availability: "Wed, Fri — 10:00 AM to 1:00 PM",
-    image: "/images/placeholders/doctor-1.jpg",
+    image: "/images/placeholders/doctor-1.svg",
   },
   {
     id: "doc-8",
@@ -197,7 +197,7 @@ export const clinicians: Clinician[] = [
     education: "MBBS, DA, FWACS (Anaesthesia)",
     experience: 13,
     availability: "On-call schedule",
-    image: "/images/placeholders/doctor-2.jpg",
+    image: "/images/placeholders/doctor-2.svg",
   },
 ];
 

@@ -26,7 +26,7 @@ const principles = [
 export default function EthicsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/research-lab.jpg"
         eyebrow="Research Governance"
         title="Research Ethics Board"
         description="Independent, rigorous, and human-centred oversight for every research project at TAU."

@@ -18,7 +18,7 @@ export const metadata: Metadata = generatePageMetadata({
 export default function HospitalDepartmentsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/medical-clinic.svg"
         eyebrow="Teaching Hospital"
         title="Clinical Departments"
         description="Specialist teams across 12 departments delivering comprehensive care and clinical training."

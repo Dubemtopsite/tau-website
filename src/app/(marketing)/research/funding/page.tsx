@@ -27,7 +27,7 @@ const opportunities = [
 export default function ResearchFundingPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/research-lab.jpg"
         eyebrow="Research Funding"
         title="Fuel Your Discovery"
         description="From seed grants to full fellowships, TAU invests in ideas before they become breakthroughs."

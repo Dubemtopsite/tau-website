@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Breadcrumb } from "@/components/common/breadcrumb";
 
@@ -8,11 +9,35 @@ interface PageHeroProps {
   crumbs?: { label: string; href?: string }[];
   children?: React.ReactNode;
   className?: string;
+  image?: string;
+  imageAlt?: string;
 }
 
-export function PageHero({ title, description, eyebrow, crumbs, children, className }: PageHeroProps) {
+export function PageHero({
+  title,
+  description,
+  eyebrow,
+  crumbs,
+  children,
+  className,
+  image,
+  imageAlt,
+}: PageHeroProps) {
   return (
     <div className={cn("relative overflow-hidden bg-navy text-white", className)}>
+      {image ? (
+        <>
+          <Image
+            src={image}
+            alt={imageAlt ?? ""}
+            fill
+            sizes="100vw"
+            className="absolute inset-0 h-full w-full object-cover opacity-40"
+            aria-hidden={imageAlt ? undefined : true}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" aria-hidden="true" />
+        </>
+      ) : null}
       <div className="bg-grid absolute inset-0 opacity-70" aria-hidden="true" />
       <div className="absolute -right-24 -top-24 size-96 rounded-full bg-medical/30 blur-3xl" aria-hidden="true" />
       <div className="absolute -bottom-32 -left-24 size-96 rounded-full bg-gold/10 blur-3xl" aria-hidden="true" />

@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const KNOWN_LABELS: Record<string, string> = {
@@ -60,6 +64,7 @@ export function PlaceholderImage({
   icon,
   ...props
 }: PlaceholderImageProps) {
+  const [broken, setBroken] = useState(false);
   const label = alt || imageLabel(src);
   const initials = label
     .split(" ")
@@ -88,18 +93,29 @@ export function PlaceholderImage({
       )}
       {...props}
     >
-      <div className="bg-grid absolute inset-0 opacity-60" />
-      <div className="absolute -right-16 -top-16 size-56 rounded-full bg-medical/40 blur-3xl transition-transform duration-700 group-hover/placeholder:scale-125" />
-      <div className="absolute -bottom-20 -left-16 size-56 rounded-full bg-gold/20 blur-3xl" />
-      <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 p-6 text-center">
-        <div className="flex size-14 items-center justify-center rounded-2xl border border-white/15 bg-white/10 backdrop-blur-sm">
-          {icon ?? (
-            <span className="font-display text-lg font-extrabold tracking-wider text-white">{initials || "TAU"}</span>
-          )}
+      {src && !broken ? (
+        <Image
+          src={src}
+          alt={label}
+          fill
+          sizes="(min-width: 1024px) 33vw, 100vw"
+          className="object-cover"
+          onError={() => setBroken(true)}
+        />
+      ) : (
+        <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 p-6 text-center">
+          <div className="bg-grid absolute inset-0 opacity-60" />
+          <div className="absolute -right-16 -top-16 size-56 rounded-full bg-medical/40 blur-3xl" />
+          <div className="absolute -bottom-20 -left-16 size-56 rounded-full bg-gold/20 blur-3xl" />
+          <div className="relative flex size-14 items-center justify-center rounded-2xl border border-white/15 bg-white/10 backdrop-blur-sm">
+            {icon ?? (
+              <span className="font-display text-lg font-extrabold tracking-wider text-white">{initials || "TAU"}</span>
+            )}
+          </div>
+          <span className="relative font-display text-sm font-semibold text-white/90">{label}</span>
+          <span className="relative text-xs uppercase tracking-widest text-gold-light/90">Transatlantic University</span>
         </div>
-        <span className="font-display text-sm font-semibold text-white/90">{label}</span>
-        <span className="text-xs uppercase tracking-widest text-gold-light/90">Transatlantic University</span>
-      </div>
+      )}
     </div>
   );
 }

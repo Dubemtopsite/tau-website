@@ -28,7 +28,7 @@ const labs = [
 export default function ResearchFacilitiesPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/research-lab.jpg"
         eyebrow="Research Infrastructure"
         title="World-Class Facilities"
         description="Shared core facilities that let any faculty member, postdoc, or student access serious science."

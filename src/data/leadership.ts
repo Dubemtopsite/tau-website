@@ -10,7 +10,7 @@ export const leadership: LeadershipMember[] = [
     bio: "Prof. Grace Okonkwo leads Transatlantic University's academic and administrative vision. A distinguished public health scholar, she previously directed national health programmes and has advised governments across West Africa on health workforce policy.",
     credentials: "MBBS, MPH (Harvard), PhD (London School of Hygiene & Tropical Medicine)",
     email: "vice.chancellor@tau.edu.ng",
-    image: "/images/placeholders/vice-chancellor.jpg",
+    image: "/images/placeholders/vice-chancellor.svg",
     order: 1,
   },
   {
@@ -22,7 +22,7 @@ export const leadership: LeadershipMember[] = [
     bio: "Prof. Samuel Nwankwo oversees the academic mission, faculty recruitment, and curriculum quality across all six faculties. A biochemist by training, he championed the university's simulation-based learning strategy.",
     credentials: "BSc, PhD (Biochemistry), FRSC",
     email: "provost@tau.edu.ng",
-    image: "/images/placeholders/provost.jpg",
+    image: "/images/placeholders/provost.svg",
     order: 2,
   },
   {
@@ -34,7 +34,7 @@ export const leadership: LeadershipMember[] = [
     bio: "Prof. Ngozi Adebayo is a consultant physician and medical educator who led the design of TAU's integrated MBBS curriculum. She is a passionate advocate for interprofessional education and patient safety.",
     credentials: "MBBS, FRCP, FWACP (Internal Medicine)",
     email: "medicine.dean@tau.edu.ng",
-    image: "/images/placeholders/dean-medicine.jpg",
+    image: "/images/placeholders/dean-medicine.svg",
     order: 3,
   },
   {
@@ -46,7 +46,7 @@ export const leadership: LeadershipMember[] = [
     bio: "Dr. Godwin Maduka is a Nigerian-American physician and philanthropist, and the founder of Transatlantic University. His vision is to build a world-class medical institution that develops global healthcare leaders from Africa.",
     credentials: "MD, Founder & Philanthropist",
     email: "board@tau.edu.ng",
-    image: "/images/placeholders/board-chair.jpg",
+    image: "/images/placeholders/board-chair.svg",
     order: 4,
   },
   {

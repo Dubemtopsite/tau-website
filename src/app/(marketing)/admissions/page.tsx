@@ -58,7 +58,7 @@ const deadlines = [
 export default function AdmissionsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Admissions"
         title="Your Journey Starts Here"
         description="A clear, transparent admissions process designed to help you take the next step toward a career in the health sciences."

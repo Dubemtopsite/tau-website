@@ -25,7 +25,7 @@ const applySteps = [
 export default function UndergraduateProgramsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Study"
         title="Undergraduate Programs"
         description="Six faculties, one standard of excellence. Find the degree that starts your journey in the health sciences."

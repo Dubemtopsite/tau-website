@@ -26,7 +26,7 @@ const zones = [
 export default function CampusMapPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Campus & Facilities"
         title="A Campus Built for Learning and Living"
         description="Umuchukwu, Anambra State — a purpose-built campus where 8,000+ students learn, live, and lead."

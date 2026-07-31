@@ -44,7 +44,7 @@ const strategicPillars = [
 export default function MissionVisionPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Mission & Vision"
         title="Purpose That Guides Everything"
         description="Our mission and vision define who we are, what we do, and why it matters."

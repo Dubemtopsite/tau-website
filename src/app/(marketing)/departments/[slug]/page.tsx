@@ -49,6 +49,7 @@ export default async function DepartmentPage({ params }: Props) {
         eyebrow="Academic Department"
         title={department.name}
         description={department.description}
+        image={department.image}
         crumbs={[{ label: "Departments", href: "/departments" }, { label: department.name }]}
       />
 

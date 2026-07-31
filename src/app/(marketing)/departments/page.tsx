@@ -18,7 +18,7 @@ export const metadata: Metadata = generatePageMetadata({
 export default function DepartmentsPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/medical-clinic.svg"
         eyebrow="Academics"
         title="Our Departments"
         description="Specialised academic units delivering teaching, research, and clinical excellence across the faculties."

@@ -17,7 +17,7 @@ export const metadata: Metadata = generatePageMetadata({
 export default function FacultiesPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/faculty-medicine.jpg"
         eyebrow="Academics"
         title="Our Faculties"
         description="Six faculties spanning the full spectrum of the health sciences — united by one standard of excellence."

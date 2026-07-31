@@ -50,7 +50,7 @@ export const events: UniversityEvent[] = [
     date: "2026-09-08",
     time: "All day",
     location: "Throughout Campus",
-    image: "/images/placeholders/event-orientation.jpg",
+    image: "/images/placeholders/event-orientation.svg",
     capacity: "All new students",
     agenda: [
       { time: "Day 1", title: "Campus tour and faculty welcome" },
@@ -95,7 +95,7 @@ export const events: UniversityEvent[] = [
     date: "2026-08-20",
     time: "3:00 PM WAT",
     location: "Online",
-    image: "/images/placeholders/event-orientation.jpg",
+    image: "/images/placeholders/event-orientation.svg",
   },
 ];
 

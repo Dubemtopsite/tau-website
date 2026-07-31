@@ -64,7 +64,7 @@ export const departments: Department[] = [
     programmes: ["BSc Public Health", "BSc Epidemiology", "MPH"],
     researchFocus: ["Infectious Disease Surveillance", "Maternal & Child Health", "Health Inequities", "Outbreak Response"],
     staffCount: 12,
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
   },
   {
     id: "restorative-dentistry",
@@ -77,7 +77,7 @@ export const departments: Department[] = [
     programmes: ["BDS"],
     researchFocus: ["Adhesive Dentistry", "Minimally Invasive Techniques", "Digital Dentistry", "Geriatric Oral Care"],
     staffCount: 10,
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
   },
 ];
 

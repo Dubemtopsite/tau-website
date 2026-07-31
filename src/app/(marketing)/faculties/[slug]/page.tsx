@@ -53,6 +53,7 @@ export default async function FacultyPage({ params }: Props) {
         eyebrow={faculty.tagline}
         title={faculty.name}
         description={faculty.description}
+        image={faculty.image}
         crumbs={[{ label: "Faculties", href: "/faculties" }, { label: faculty.name }]}
       />
 

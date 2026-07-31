@@ -162,7 +162,7 @@ export const programs: Program[] = [
     ],
     careerOutcomes: ["Consultant Family Physician", "Academic Physician", "Community Health Leader"],
     tuition: "Scholarship funded",
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
   },
 ];
 

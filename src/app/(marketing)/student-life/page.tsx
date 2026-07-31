@@ -48,7 +48,7 @@ export default function StudentLifePage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="Student Life"
         title="Campus Life at TAU"
         description="Beyond the wards and lecture theatres lies a campus buzzing with sport, music, service, and friendship."

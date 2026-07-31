@@ -25,7 +25,7 @@ export default function EventsPage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/event-conference.jpg"
         eyebrow="Events"
         title="Mark Your Calendar"
         description="Conferences, ceremonies, webinars, and community gatherings — there's always something happening at TAU."

@@ -31,7 +31,7 @@ export default function TeachingHospitalPage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-medical-building.jpg"
         eyebrow="Teaching Hospital"
         title="Care. Teaching. Innovation."
         description="The Transatlantic Teaching Hospital is where our students learn their craft and our communities receive world-class care."

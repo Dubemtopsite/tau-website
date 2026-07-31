@@ -65,7 +65,7 @@ export const campusFacilities: CampusFacility[] = [
     category: "Clinical",
     description:
       "A 400+ bed teaching hospital providing patient care and clinical training across all specialties.",
-    image: "/images/placeholders/medical-clinic.jpg",
+    image: "/images/placeholders/medical-clinic.svg",
   },
 ];
 

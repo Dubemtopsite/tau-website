@@ -71,7 +71,7 @@ const centres = [
 export default function ResearchCentresPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/research-lab.jpg"
         eyebrow="Research Centres"
         title="Hubs of Discovery"
         description="Focused institutes where interdisciplinary teams pursue answers to the region's most pressing health challenges."

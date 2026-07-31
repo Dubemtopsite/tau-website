@@ -46,6 +46,7 @@ export default async function ProgramDetailPage({ params }: Props) {
         eyebrow={`${program.type} Programme`}
         title={program.title}
         description={program.description}
+        image={program.image}
         crumbs={[{ label: "Programmes", href: "/undergraduate-programs" }, { label: program.degree }]}
       >
         <div className="flex flex-wrap items-center gap-3">

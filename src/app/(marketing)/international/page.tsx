@@ -37,7 +37,7 @@ const facts = [
 export default function InternationalPage() {
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-students.jpg"
         eyebrow="International Students"
         title="Your Home Away From Home"
         description="Join students from across Africa and the world studying medicine in the heart of Nigeria."

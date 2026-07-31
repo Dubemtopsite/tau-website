@@ -32,7 +32,7 @@ export default function LeadershipPage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Leadership"
         title="Leaders Who Teach, Heal, and Inspire"
         description="The team guiding Transatlantic University's academic mission, governance, and vision."

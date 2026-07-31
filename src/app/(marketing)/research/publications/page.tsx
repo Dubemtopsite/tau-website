@@ -28,7 +28,7 @@ export default function PublicationsPage() {
 
   return (
     <>
-      <PageHero
+      <PageHero image="/images/placeholders/research-lab.jpg"
         eyebrow="Research Outputs"
         title="Publications & Scholarship"
         description="Peer-reviewed research from TAU investigators, published in leading international journals."
