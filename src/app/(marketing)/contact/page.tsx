@@ -11,7 +11,7 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 export const metadata: Metadata = generatePageMetadata({
   title: "Contact Us",
   description:
-    "Get in touch with Transatlantic University — admissions, research, hospital, careers, and general enquiries.",
+    "Get in touch with Transatlantic University — admissions, research, careers, and general enquiries.",
   path: "/contact",
 });
 
@@ -29,12 +29,6 @@ const offices = [
     hours: "Mon – Fri, 9:00 AM – 4:00 PM",
   },
   {
-    title: "Teaching Hospital",
-    email: "hospital@tau.edu.ng",
-    phone: "+234 700 828 6337",
-    hours: "24/7 emergency",
-  },
-  {
     title: "General Enquiries",
     email: siteConfig.contact.emailAlt,
     phone: siteConfig.contact.phone,
@@ -48,7 +42,7 @@ export default function ContactPage() {
       <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Contact Us"
         title="We'd Love to Hear From You"
-        description="Questions about admissions, research, patient care, or partnership? Our team replies within 24 hours."
+        description="Questions about admissions, research, or partnership? Our team replies within 24 hours."
         crumbs={[{ label: "Contact" }]}
       />
 

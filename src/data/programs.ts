@@ -12,11 +12,11 @@ export const programs: Program[] = [
     duration: "6 Years",
     mode: "Full-time",
     description:
-      "The MBBS programme at Transatlantic University is a six-year, integrated medical curriculum combining foundational sciences, clinical skills training, and extensive rotations at the Transatlantic Teaching Hospital. Graduates are equipped for residency, global practice, and research leadership.",
+      "The MBBS programme at Transatlantic University is a six-year, integrated medical curriculum combining foundational sciences, clinical skills training, and extensive rotations across our partner hospital network. Graduates are equipped for residency, global practice, and research leadership.",
     highlights: [
       "Integrated systems-based curriculum",
       "High-fidelity simulation from year one",
-      "Clinical rotations at our 400+ bed teaching hospital",
+      "Clinical rotations at partner hospitals and community health centres",
       "Global electives with partner universities",
       "Research mentorship with faculty publication",
       "Dedicated preparation for foreign licensing exams",
@@ -71,9 +71,9 @@ export const programs: Program[] = [
     duration: "6 Years",
     mode: "Full-time",
     description:
-      "The BDS programme delivers comprehensive dental education from preclinical sciences through supervised clinical practice in our modern dental hospital.",
+      "The BDS programme delivers comprehensive dental education from preclinical sciences through supervised clinical practice in our modern dental clinics.",
     highlights: [
-      "Modern 40-chair dental teaching hospital",
+      "Modern 40-chair dental clinic",
       "Digital dentistry and CAD/CAM laboratory",
       "Early patient contact and clinical exposure",
     ],
@@ -149,7 +149,7 @@ export const programs: Program[] = [
     duration: "5 Years",
     mode: "Full-time",
     description:
-      "A structured residency programme preparing physicians for specialist certification in family medicine with rotations across community health centres and the teaching hospital.",
+      "A structured residency programme preparing physicians for specialist certification in family medicine with rotations across community health centres and partner hospitals.",
     highlights: [
       "Accredited training postings",
       "Community-based longitudinal practice",
@@ -162,7 +162,7 @@ export const programs: Program[] = [
     ],
     careerOutcomes: ["Consultant Family Physician", "Academic Physician", "Community Health Leader"],
     tuition: "Scholarship funded",
-    image: "/images/placeholders/medical-clinic.svg",
+    image: "/images/placeholders/faculty-medicine.jpg",
   },
 ];
 

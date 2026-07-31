@@ -21,7 +21,7 @@ export const metadata: Metadata = generatePageMetadata({
 const priorities = [
   { Icon: GraduationCap, title: "Scholarships & Bursaries", description: "Give a deserving student the chance to study medicine, nursing, or pharmacy regardless of circumstance." },
   { Icon: Microscope, title: "Research & Innovation", description: "Fund the labs, projects, and researchers tackling neglected tropical diseases and global health." },
-  { Icon: HeartHandshake, title: "Teaching Hospital", description: "Support the wards, equipment, and community care programmes that serve thousands of patients yearly." },
+  { Icon: HeartHandshake, title: "Student Facilities", description: "Equip hostels, libraries, and simulation centres that make campus a home for every student." },
 ];
 
 export default function GivingPage() {
@@ -30,7 +30,7 @@ export default function GivingPage() {
       <PageHero image="/images/placeholders/hero-campus.jpg"
         eyebrow="Giving & Donations"
         title="Invest in the Future of Health"
-        description="Your generosity changes lives — a scholarship, a microscope, a ward. Join the mission."
+        description="Your generosity changes lives — a scholarship, a microscope, a laboratory. Join the mission."
         crumbs={[{ label: "Giving & Donations" }]}
       />
 
@@ -112,7 +112,7 @@ export default function GivingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Badge variant="accent" className="mt-0.5 shrink-0">In-Kind</Badge>
-                    Donate equipment, books, or medical supplies to our faculties and hospital.
+                    Donate equipment, books, or medical supplies to our faculties and research laboratories.
                   </li>
                 </ul>
                 <Button asChild className="mt-7">

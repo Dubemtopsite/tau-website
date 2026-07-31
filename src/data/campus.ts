@@ -59,14 +59,6 @@ export const campusFacilities: CampusFacility[] = [
       "Core molecular, cell culture, analytical, and microbiology laboratories supporting all six faculties.",
     image: "/images/placeholders/research-lab.jpg",
   },
-  {
-    id: "clinic",
-    name: "Transatlantic Teaching Hospital",
-    category: "Clinical",
-    description:
-      "A 400+ bed teaching hospital providing patient care and clinical training across all specialties.",
-    image: "/images/placeholders/medical-clinic.svg",
-  },
 ];
 
 export const gallery: GalleryImage[] = [

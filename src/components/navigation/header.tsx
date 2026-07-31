@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   BadgeCheck,
-  BedDouble,
   BookOpen,
   Briefcase,
   Building2,
@@ -21,7 +20,6 @@ import {
   GraduationCap,
   HandCoins,
   HeartHandshake,
-  Hospital,
   Landmark,
   Leaf,
   Library as LibraryIcon,
@@ -36,7 +34,6 @@ import {
   Scale,
   Send,
   ShieldCheck,
-  Stethoscope,
   UserRound,
   Users,
   UsersRound,
@@ -74,9 +71,6 @@ const iconMap: Record<NavIcon, React.ElementType> = {
   "hand-coins": HandCoins,
   lightbulb: Lightbulb,
   "shield-check": ShieldCheck,
-  hospital: Hospital,
-  stethoscope: Stethoscope,
-  "bed-double": BedDouble,
   "user-round": UserRound,
   send: Send,
   calendar: Calendar,

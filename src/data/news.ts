@@ -60,44 +60,6 @@ export const news: NewsArticle[] = [
     tags: ["Nursing", "Licensure", "Achievement"],
   },
   {
-    id: "news-4",
-    slug: "tau-signs-memorandum-with-houston-teaching-hospital",
-    title: "TAU Signs Exchange Agreement with Houston Teaching Hospital",
-    excerpt:
-      "A new international partnership will offer clinical electives, faculty exchanges, and joint research to TAU medical students in the United States.",
-    content: [
-      "Transatlantic University has signed a memorandum of understanding with a major Houston-based teaching hospital, unlocking clinical electives and faculty exchange opportunities for TAU students and researchers.",
-      "The partnership will create structured international rotations for final-year medical students and support joint research programmes in cardiovascular and global health.",
-      "It is the latest in a growing portfolio of global partnerships spanning North America, Europe, and Africa.",
-    ],
-    category: "Partnerships",
-    image: "/images/placeholders/news-1.jpg",
-    author: "Office of Global Engagement",
-    authorRole: "International Partnerships",
-    publishedAt: "2026-04-02",
-    readTime: "4 min read",
-    tags: ["Partnership", "International", "Global Health"],
-  },
-  {
-    id: "news-5",
-    slug: "first-cohort-pharmacy-interns-graduate",
-    title: "First Cohort of Pharmacy Interns Completes Hospital Placement",
-    excerpt:
-      "The inaugural pharmacy cohort completed structured rotations in clinical pharmacy, drug information, and hospital administration at the teaching hospital.",
-    content: [
-      "The first cohort of Doctor of Pharmacy interns has completed its structured hospital placement programme at the Transatlantic Teaching Hospital.",
-      "Over 12 months, interns rotated through clinical pharmacy services, pharmaceutical compounding, drug information, and pharmacy administration — bridging classroom theory with real-world practice.",
-      "Programme leadership described the milestone as a template for experiential learning across all faculties.",
-    ],
-    category: "Students",
-    image: "/images/placeholders/news-2.jpg",
-    author: "Faculty of Pharmacy",
-    authorRole: "Pharmacy Communications",
-    publishedAt: "2026-03-15",
-    readTime: "5 min read",
-    tags: ["Pharmacy", "Students", "Experiential Learning"],
-  },
-  {
     id: "news-6",
     slug: "innovation-hub-wins-africa-health-award",
     title: "TAU Innovation Hub Wins Pan-African Health Technology Award",
@@ -123,8 +85,6 @@ export const newsCategories = [
   "Campus",
   "Research",
   "Achievements",
-  "Partnerships",
-  "Students",
   "Innovation",
 ];
 

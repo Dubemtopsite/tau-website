@@ -8,7 +8,7 @@ export const faculties: Faculty[] = [
     shortName: "Medicine",
     tagline: "Training physicians who lead, heal, and inspire.",
     description:
-      "The Faculty of Medicine delivers a rigorous, globally benchmarked MBBS programme. Students train in state-of-the-art simulation laboratories and rotate through the Transatlantic Teaching Hospital, building the clinical mastery and compassion that define exceptional physicians.",
+      "The Faculty of Medicine delivers a rigorous, globally benchmarked MBBS programme. Students train in state-of-the-art simulation laboratories and rotate through partner hospitals and community health centres, building the clinical mastery and compassion that define exceptional physicians.",
     image: "/images/placeholders/faculty-medicine.jpg",
     dean: "Prof. Ngozi Adebayo",
     departments: ["Anatomy", "Physiology", "Biochemistry", "Pathology", "Pharmacology", "Medicine", "Surgery", "Paediatrics", "Obstetrics & Gynaecology", "Community Medicine"],

@@ -23,9 +23,6 @@ export type NavIcon =
   | "hand-coins"
   | "lightbulb"
   | "shield-check"
-  | "hospital"
-  | "stethoscope"
-  | "bed-double"
   | "user-round"
   | "send"
   | "calendar"
@@ -104,20 +101,6 @@ export const mainNav: NavGroup[] = [
       { label: "Funding Opportunities", href: "/research/funding", description: "Grants, fellowships, and awards." },
       { label: "Innovation Partnerships", href: "/research/innovation", description: "Translate ideas into impact." },
       { label: "Research Ethics Board", href: "/research/ethics", description: "Ethical oversight for all research." },
-    ],
-  },
-  {
-    label: "Teaching Hospital",
-    href: "/teaching-hospital",
-    description: "Patient care, clinical training, and referral services.",
-    icon: "hospital",
-    children: [
-      { label: "Hospital Overview", href: "/teaching-hospital", description: "A centre of clinical excellence." },
-      { label: "Clinical Departments", href: "/teaching-hospital/departments", description: "Specialist units and services." },
-      { label: "Patient Care Information", href: "/teaching-hospital/patient-care", description: "Planning your care with us." },
-      { label: "Find a Doctor", href: "/teaching-hospital/find-a-doctor", description: "Search our clinicians." },
-      { label: "Referrals", href: "/teaching-hospital/referrals", description: "Refer a patient to our consultants." },
-      { label: "Medical Education", href: "/teaching-hospital/medical-education", description: "Where students become clinicians." },
     ],
   },
   {

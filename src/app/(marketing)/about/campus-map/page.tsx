@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, MapPin, School, UtensilsCrossed, Dumbbell, HeartPulse } from "lucide-react";
+import { Clock, MapPin, School, UtensilsCrossed, Dumbbell } from "lucide-react";
 import { generatePageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { Section, Container } from "@/components/common/container";
@@ -12,13 +12,12 @@ import { campusFacilities } from "@/data/campus";
 export const metadata: Metadata = generatePageMetadata({
   title: "Campus Map & Facilities",
   description:
-    "Explore the Transatlantic University campus in Umuchukwu, Anambra State — libraries, simulation labs, hostels, sports, and the teaching hospital.",
+    "Explore the Transatlantic University campus in Umuchukwu, Anambra State — libraries, simulation labs, hostels, sports, and research facilities.",
   path: "/about/campus-map",
 });
 
 const zones = [
   { Icon: School, label: "Academic Zone", description: "Lecture theatres, faculty buildings, library, and simulation centre." },
-  { Icon: HeartPulse, label: "Clinical Zone", description: "Transatlantic Teaching Hospital and outpatient clinics." },
   { Icon: Dumbbell, label: "Recreation Zone", description: "Sports complex, fitness centre, and playing fields." },
   { Icon: UtensilsCrossed, label: "Residential Zone", description: "Student hostels, dining halls, and the student centre." },
 ];

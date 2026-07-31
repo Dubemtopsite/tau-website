@@ -67,7 +67,6 @@ export function ContactForm() {
           <option value="Admissions">Admissions & Applications</option>
           <option value="Tuition">Tuition & Scholarships</option>
           <option value="Research">Research & Partnerships</option>
-          <option value="Hospital">Hospital & Patient Services</option>
           <option value="Careers">Careers</option>
           <option value="Giving">Giving & Donations</option>
           <option value="Other">Other Enquiry</option>

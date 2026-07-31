@@ -39,7 +39,6 @@ const columns = [
     links: [
       { label: "Research & Innovation", href: route.research.overview },
       { label: "Publications", href: route.research.publications },
-      { label: "Teaching Hospital", href: route.hospital.overview },
       { label: "News", href: route.community.news },
       { label: "Events", href: route.community.events },
       { label: "Careers", href: route.community.careers },

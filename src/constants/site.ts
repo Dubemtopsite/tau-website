@@ -65,14 +65,6 @@ export const route = {
     innovation: "/research/innovation",
     ethics: "/research/ethics",
   },
-  hospital: {
-    overview: "/teaching-hospital",
-    departments: "/teaching-hospital/departments",
-    patientCare: "/teaching-hospital/patient-care",
-    findDoctor: "/teaching-hospital/find-a-doctor",
-    referrals: "/teaching-hospital/referrals",
-    education: "/teaching-hospital/medical-education",
-  },
   community: {
     news: "/news",
     events: "/events",
