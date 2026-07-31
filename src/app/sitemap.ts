@@ -47,6 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/library",
     "/giving",
     "/contact",
+    "/search",
+    "/ai-assistant",
   ];
 
   const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({

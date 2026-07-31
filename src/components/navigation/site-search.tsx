@@ -7,73 +7,8 @@ import { FileText, GraduationCap, Newspaper } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { news } from "@/data/news";
-import { programs } from "@/data/programs";
-import { faculties } from "@/data/faculties";
-import { events } from "@/data/events";
+import { staticResults, searchResults } from "@/lib/search";
 import type { SearchResult } from "@/types";
-
-const staticResults: SearchResult[] = [
-  { title: "Admissions", href: "/admissions", type: "Page", description: "Apply to TAU — undergraduate and postgraduate." },
-  { title: "Tuition & Scholarships", href: "/tuition", type: "Page", description: "Fees, financial aid, and scholarships." },
-  { title: "Research & Innovation", href: "/research", type: "Page", description: "Centres, publications, and funding." },
-  { title: "About TAU", href: "/about", type: "Page", description: "History, mission, leadership, and governance." },
-  { title: "Contact Us", href: "/contact", type: "Page", description: "Find admissions and departmental contacts." },
-];
-
-const searchIndex: SearchResult[] = [
-  ...staticResults,
-  ...faculties.map((f) => ({
-    title: f.name,
-    href: `/faculties/${f.slug}`,
-    type: "Faculty",
-    description: f.tagline,
-  })),
-  ...programs.map((p) => ({
-    title: `${p.degree} — ${p.title}`,
-    href: `/programs/${p.slug}`,
-    type: "Programme",
-    description: `${p.type} · ${p.duration}`,
-  })),
-  ...news.map((n) => ({
-    title: n.title,
-    href: `/news/${n.slug}`,
-    type: "News",
-    description: n.excerpt,
-  })),
-  ...events.map((e) => ({
-    title: e.title,
-    href: `/events/${e.slug}`,
-    type: "Event",
-    description: e.description,
-  })),
-];
-
-function normalize(text: string) {
-  return text.toLowerCase().replace(/[^a-z0-9\s]/g, "").trim();
-}
-
-function rankResults(query: string): SearchResult[] {
-  const q = normalize(query);
-  if (!q) return [];
-  const terms = q.split(/\s+/);
-
-  return searchIndex
-    .map((result) => {
-      const haystack = normalize(`${result.title} ${result.description} ${result.type}`);
-      let score = 0;
-      for (const term of terms) {
-        if (haystack.includes(term)) score += term.length;
-      }
-      if (normalize(result.title).startsWith(q)) score += 20;
-      if (normalize(result.title).includes(q)) score += 10;
-      return { result, score };
-    })
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 10)
-    .map(({ result }) => result);
-}
 
 const typeIcons: Record<string, React.ElementType> = {
   Faculty: GraduationCap,
@@ -88,7 +23,7 @@ export function SiteSearchDialog({ open, onOpenChange }: { open: boolean; onOpen
   const [activeIndex, setActiveIndex] = useState(0);
   const router = useRouter();
 
-  const results = useMemo(() => rankResults(query), [query]);
+  const results = useMemo(() => searchResults(query), [query]);
 
   const handleOpenChange = (next: boolean) => {
     if (!next) {
