@@ -64,7 +64,7 @@ export const departments: Department[] = [
     programmes: ["BSc Public Health", "BSc Epidemiology", "MPH"],
     researchFocus: ["Infectious Disease Surveillance", "Maternal & Child Health", "Health Inequities", "Outbreak Response"],
     staffCount: 12,
-    image: "/images/placeholders/medical-clinic.svg",
+    image: "/images/placeholders/research-lab.jpg",
   },
   {
     id: "restorative-dentistry",
@@ -72,12 +72,12 @@ export const departments: Department[] = [
     name: "Department of Restorative Dentistry",
     facultyId: "dentistry",
     description:
-      "The Department of Restorative Dentistry focuses on conservative management of caries, endodontics, and fixed and removable prosthodontics in a modern, fully equipped dental hospital.",
+      "The Department of Restorative Dentistry focuses on conservative management of caries, endodontics, and fixed and removable prosthodontics in a modern, fully equipped dental clinic.",
     head: "Dr. Tolulope Bakare",
     programmes: ["BDS"],
     researchFocus: ["Adhesive Dentistry", "Minimally Invasive Techniques", "Digital Dentistry", "Geriatric Oral Care"],
     staffCount: 10,
-    image: "/images/placeholders/medical-clinic.svg",
+    image: "/images/placeholders/faculty-dentistry.jpg",
   },
 ];
 

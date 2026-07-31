@@ -5,7 +5,6 @@ and are used here for presentation purposes only. Generated illustrations are or
 vector artwork and require no attribution.
 
 - hero-campus: [File:Campus WU EA DSC 1571w.jpg](https://commons.wikimedia.org/wiki/File:Campus_WU_EA_DSC_1571w.jpg) — CC BY-SA 3.0 — P e z i
-- hero-medical-building: [File:Museum Of Modern Art At Royal Hospital Kilmainham - Dublin (Ireland) - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Museum_Of_Modern_Art_At_Royal_Hospital_Kilmainham_-_Dublin_(Ireland)_-_panoramio.jpg) — undefined — undefined
 - hero-students: [File:Dicle University students and Newroz celebration in the university campus..JPG](https://commons.wikimedia.org/wiki/File:Dicle_University_students_and_Newroz_celebration_in_the_university_campus..JPG) — undefined — undefined
 - faculty-medicine: [File:Uni of Otago medical school.jpg](https://commons.wikimedia.org/wiki/File:Uni_of_Otago_medical_school.jpg) — undefined — undefined
 - faculty-dentistry: [File:Guantanamo captive dental clinic -c.jpg](https://commons.wikimedia.org/wiki/File:Guantanamo_captive_dental_clinic_-c.jpg) — undefined — undefined

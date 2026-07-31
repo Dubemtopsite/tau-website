@@ -114,7 +114,7 @@ const groups: { value: string; label: string; Icon: typeof FileText; items: Down
     items: [
       {
         title: "Campus Map",
-        description: "Every building, hostel, clinic, and facility across the Umuchukwu campus.",
+        description: "Every building, hostel, and facility across the Umuchukwu campus.",
         meta: "PDF · 1.8 MB · Printable A3",
         badge: "Map",
         Icon: Map,

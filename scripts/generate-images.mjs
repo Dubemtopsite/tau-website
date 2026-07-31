@@ -18,7 +18,6 @@ const H = 800;
 
 const LABELS = {
   "hero-campus": { kind: "photo", query: "university campus building", theme: "campus", minWidth: 1200 },
-  "hero-medical-building": { kind: "photo", query: "modern hospital building exterior", theme: "hospital" },
   "hero-students": { kind: "photo", query: "university students campus", theme: "students", minWidth: 1200 },
   "faculty-medicine": { kind: "photo", query: "medical school building", theme: "medicine" },
   "faculty-dentistry": { kind: "photo", query: "dental clinic chair", theme: "dentistry" },
@@ -33,7 +32,6 @@ const LABELS = {
   "sports-complex": { kind: "photo", query: "athletics running track stadium", theme: "sports" },
   cafeteria: { kind: "photo", query: "cafeteria dining hall", theme: "cafeteria" },
   "research-lab": { kind: "photo", query: "research laboratory microscope scientist", theme: "research" },
-  "medical-clinic": { kind: "photo", query: "hospital ward", theme: "clinic" },
   "news-1": { kind: "photo", query: "medical simulation training centre", theme: "simulation" },
   "news-2": { kind: "photo", query: "malaria research laboratory", theme: "field" },
   "news-3": { kind: "photo", query: "graduation ceremony", theme: "graduation" },
@@ -50,9 +48,6 @@ const LABELS = {
   "student-1": { kind: "portrait" },
   "student-2": { kind: "portrait" },
   "student-3": { kind: "portrait" },
-  "doctor-1": { kind: "portrait" },
-  "doctor-2": { kind: "portrait" },
-  "doctor-3": { kind: "portrait" },
 };
 
 /* ---------------------------------- helpers ---------------------------------- */
@@ -137,17 +132,6 @@ const scenes = {
       ${tree(80, 560, 1.1)}${tree(990, 570, 0.9)}${tree(1080, 555, 1.2)}
       <path d="M120 610 C340 560 520 620 760 595 C900 585 1000 600 1140 600" stroke="${GOLD}" stroke-opacity="0.5" stroke-width="3" fill="none"/>
       ${person(360, 640, 0.8)}${person(420, 645, 0.9)}${person(480, 638, 0.8)}
-      ${chip()}`;
-  },
-  hospital() {
-    return `${sky()}${ground(600)}${sun(1050, 120)}
-      ${building(240, 220, 720, 380, MEDICAL_LIGHT, true)}
-      <rect x="240" y="220" width="720" height="380" rx="6" fill="none" stroke="${INK}" stroke-opacity="0.15" stroke-width="3"/>
-      ${windows(300, 320, 6, 3, 30)}
-      <g transform="translate(600 470)"><rect x="-64" y="-86" width="128" height="172" rx="10" fill="${GOLD}"/><rect x="-18" y="-66" width="36" height="132" rx="18" fill="${NAVY}"/><rect x="-66" y="-16" width="132" height="32" rx="16" fill="${NAVY}"/></g>
-      <rect x="510" y="600" width="180" height="70" rx="6" fill="${NAVY}" opacity="0.85"/>
-      <path d="M540 640 H660" stroke="${GOLD_LIGHT}" stroke-width="5" stroke-linecap="round"/>
-      ${tree(120, 560, 1)}${tree(1040, 560, 1.1)}
       ${chip()}`;
   },
   students() {
@@ -325,21 +309,6 @@ const scenes = {
         <circle cx="-90" cy="-120" r="12" fill="${GOLD_LIGHT}"/><circle cx="80" cy="-20" r="12" fill="${GOLD_LIGHT}"/>
       </g>
       <path d="M120 660 H1080" stroke="${GOLD}" stroke-opacity="0.4" stroke-width="2"/>
-      ${chip()}`;
-  },
-  clinic() {
-    return `${sky()}${ground(580)}
-      <rect x="200" y="180" width="800" height="340" rx="14" fill="${NAVY_LIGHT}" stroke="${INK}" stroke-opacity="0.12" stroke-width="3"/>
-      <g transform="translate(560 360)">
-        <rect x="-140" y="-40" width="280" height="90" rx="10" fill="${INK}"/>
-        <rect x="140" y="-70" width="80" height="90" rx="8" fill="${INK}"/>
-        <rect x="150" y="-62" width="60" height="44" rx="6" fill="${MEDICAL_LIGHT}"/>
-        <circle cx="0" cy="0" r="18" fill="${GOLD}"/>
-        <path d="M-140 90 H140" stroke="${MEDICAL}" stroke-width="10"/>
-        <rect x="180" y="-96" width="24" height="8" rx="4" fill="${GOLD_LIGHT}"/>
-      </g>
-      <g transform="translate(320 330)"><rect x="-60" y="-90" width="120" height="130" rx="8" fill="${MEDICAL}" opacity="0.8"/><rect x="-44" y="-74" width="88" height="34" rx="4" fill="${GOLD_LIGHT}" opacity="0.9"/></g>
-      <g transform="translate(880 330)"><rect x="-60" y="-90" width="120" height="130" rx="8" fill="${MEDICAL}" opacity="0.8"/><rect x="-44" y="-74" width="88" height="34" rx="4" fill="${GOLD_LIGHT}" opacity="0.9"/></g>
       ${chip()}`;
   },
   field() {

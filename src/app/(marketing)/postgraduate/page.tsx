@@ -36,7 +36,7 @@ const tracks = [
   {
     Icon: BriefcaseBusiness,
     title: "Residency Training",
-    description: "Structured specialist training programmes at the Transatlantic Teaching Hospital leading to consultant status.",
+    description: "Structured specialist training programmes across partner hospitals and community health centres leading to consultant status.",
     programs: ["Family Medicine", "Internal Medicine", "Obstetrics & Gynaecology"],
   },
   {

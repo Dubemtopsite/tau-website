@@ -28,7 +28,7 @@ export const faculties: Faculty[] = [
     shortName: "Dentistry",
     tagline: "Shaping the future of oral and maxillofacial health.",
     description:
-      "The Faculty of Dentistry offers a comprehensive BDS programme combining foundational sciences with hands-on clinical training in our modern dental hospital. Students graduate as skilled, ethical oral health professionals ready for global practice.",
+      "The Faculty of Dentistry offers a comprehensive BDS programme combining foundational sciences with hands-on clinical training in our modern dental clinics. Students graduate as skilled, ethical oral health professionals ready for global practice.",
     image: "/images/placeholders/faculty-dentistry.jpg",
     dean: "Prof. Adewale Okafor",
     departments: ["Restorative Dentistry", "Oral & Maxillofacial Surgery", "Periodontology", "Oral Medicine & Pathology", "Child Dental Health", "Community & Preventive Dentistry"],

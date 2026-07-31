@@ -77,7 +77,7 @@ export const leadership: LeadershipMember[] = [
     name: "Prof. Ibrahim Suleiman",
     title: "Dean, Faculty of Pharmacy",
     department: "Faculty of Pharmacy",
-    bio: "A clinical pharmacist and pharmacologist, Prof. Ibrahim Suleiman leads the faculty's drug discovery collaborations and hospital placement programme.",
+    bio: "A clinical pharmacist and pharmacologist, Prof. Ibrahim Suleiman leads the faculty's drug discovery collaborations and clinical placement programme.",
     credentials: "BPharm, PharmD, PhD (Clinical Pharmacology)",
     email: "pharmacy.dean@tau.edu.ng",
     order: 7,

@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 
 const KNOWN_LABELS: Record<string, string> = {
   "hero-campus.jpg": "Transatlantic University Campus",
-  "hero-medical-building.jpg": "Teaching Hospital Building",
   "hero-students.jpg": "Students on Campus",
   "faculty-medicine.jpg": "Faculty of Medicine",
   "faculty-dentistry.jpg": "Faculty of Dentistry",
@@ -21,7 +20,6 @@ const KNOWN_LABELS: Record<string, string> = {
   "sports-complex.jpg": "Sports Complex",
   "cafeteria.jpg": "Cafeteria & Dining",
   "research-lab.jpg": "Research Laboratory",
-  "medical-clinic.jpg": "Teaching Hospital Clinic",
   "vice-chancellor.jpg": "Vice-Chancellor",
   "provost.jpg": "Provost",
   "dean-medicine.jpg": "Dean of Medicine",
@@ -35,9 +33,6 @@ const KNOWN_LABELS: Record<string, string> = {
   "student-1.jpg": "TAU Student",
   "student-2.jpg": "TAU Student",
   "student-3.jpg": "TAU Student",
-  "doctor-1.jpg": "TAU Consultant",
-  "doctor-2.jpg": "TAU Consultant",
-  "doctor-3.jpg": "TAU Consultant",
   "clinical-trial.jpg": "Clinical Trial Research",
   "innovation-center.jpg": "Innovation Centre",
 };

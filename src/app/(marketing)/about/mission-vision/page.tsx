@@ -152,7 +152,7 @@ export default function MissionVisionPage() {
                 </p>
                 <p>
                   It means scholarships that keep talent in the classroom, mentorship that meets every student
-                  by name, and a teaching hospital where learners train alongside experienced clinicians.
+                  by name, and clinical placements where learners train alongside experienced practitioners.
                 </p>
               </div>
             </Reveal>

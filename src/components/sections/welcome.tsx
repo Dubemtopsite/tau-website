@@ -14,7 +14,7 @@ export function Welcome() {
           <Reveal className="relative order-2 lg:order-1">
             <div className="relative">
               <PlaceholderImage
-                src="/images/placeholders/hero-medical-building.jpg"
+                src="/images/placeholders/faculty-medicine.jpg"
                 alt="The Transatlantic University of Medicine and Health Sciences"
                 aspect="video"
                 className="shadow-2xl shadow-navy/20"

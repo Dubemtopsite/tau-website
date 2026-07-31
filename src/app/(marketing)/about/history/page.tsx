@@ -26,7 +26,7 @@ const historyBlocks = [
   {
     title: "Growth Into a Full University",
     paragraphs: [
-      "TAU began with the Faculties of Medicine, Dentistry, and Nursing & Health Sciences. It has since grown into six faculties spanning the full spectrum of the health sciences, supported by a 400+ bed teaching hospital, a high-fidelity Clinical Simulation Centre, and an Innovation Hub.",
+      "TAU began with the Faculties of Medicine, Dentistry, and Nursing & Health Sciences. It has since grown into six faculties spanning the full spectrum of the health sciences, supported by high-fidelity simulation and research facilities, and an Innovation Hub.",
       "Today, more than 8,000 students from across Nigeria and the African continent call TAU home, guided by over 400 academic staff — many of them trained at leading universities worldwide.",
     ],
   },
@@ -43,7 +43,7 @@ const milestones = [
   { date: "2015", title: "University Established", description: "TAU opens its doors in Umuchukwu." },
   { date: "2016", title: "Biomedical Sciences Launched", description: "The faculty and first research laboratories open." },
   { date: "2017", title: "Faculty of Pharmacy", description: "BPharm and PharmD programmes commence." },
-  { date: "2018", title: "Public Health & Hospital Expansion", description: "New faculty and growing clinical capacity." },
+  { date: "2018", title: "Faculty of Public Health", description: "The Faculty of Public Health is established." },
   { date: "2022", title: "Simulation & Innovation", description: "Simulation centre and innovation hub inaugurated." },
   { date: "2026", title: "Global Recognition", description: "Landmark research and 100% licensure pass rates." },
 ];

@@ -8,12 +8,12 @@ import { CTASection } from "@/components/common/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AiAssistantChat } from "@/components/sections/ai-assistant-chat";
-import { CalendarCheck2, FileSearch, Languages, ShieldCheck, Stethoscope, Timer } from "lucide-react";
+import { CalendarCheck2, FileSearch, FlaskConical, Languages, ShieldCheck, Timer } from "lucide-react";
 
 export const metadata: Metadata = generatePageMetadata({
   title: "AI Assistant",
   description:
-    "Meet the TAU Virtual Assistant — 24/7 answers on admissions, programmes, tuition, campus life, and the teaching hospital.",
+    "Meet the TAU Virtual Assistant — 24/7 answers on admissions, programmes, tuition, campus life, and research.",
   path: "/ai-assistant",
 });
 
@@ -21,7 +21,7 @@ const capabilities = [
   { Icon: Timer, title: "Instant Answers", description: "Get accurate responses in seconds — no queues, no office hours." },
   { Icon: CalendarCheck2, title: "Admissions Guidance", description: "Deadlines, requirements, and application steps explained step by step." },
   { Icon: FileSearch, title: "Document Help", description: "Understand what to prepare, from WAEC results to international transcripts." },
-  { Icon: Stethoscope, title: "Hospital Services", description: "Find departments, consultants, and how to book care at the teaching hospital." },
+  { Icon: FlaskConical, title: "Research Insights", description: "Discover research centres, publications, and funding opportunities." },
   { Icon: Languages, title: "Multilingual", description: "Conversations in English, Igbo, Yoruba, and Hausa." },
   { Icon: ShieldCheck, title: "Private by Design", description: "Your questions are handled confidentially and never shared with third parties." },
 ];
@@ -33,7 +33,7 @@ export default function AiAssistantPage() {
         image="/images/placeholders/innovation-center.jpg"
         eyebrow="AI Assistant"
         title="Your Questions, Answered Instantly"
-        description="Ask anything about TAU — from admissions deadlines to hospital services — and get a clear answer, day or night."
+        description="Ask anything about TAU — from admissions deadlines to research funding — and get a clear answer, day or night."
         crumbs={[{ label: "AI Assistant" }]}
       >
         <div className="flex flex-wrap gap-3">

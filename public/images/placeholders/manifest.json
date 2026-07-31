@@ -7,14 +7,6 @@
     "page": "https://commons.wikimedia.org/wiki/File:Campus_WU_EA_DSC_1571w.jpg",
     "original": "File:Campus WU EA DSC 1571w.jpg"
   },
-  "hero-medical-building": {
-    "file": "hero-medical-building.jpg",
-    "kind": "photo",
-    "theme": "hospital",
-    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Museum_Of_Modern_Art_At_Royal_Hospital_Kilmainham_-_Dublin_%28Ireland%29_-_panoramio.jpg/1920px-Museum_Of_Modern_Art_At_Royal_Hospital_Kilmainham_-_Dublin_%28Ireland%29_-_panoramio.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Museum_Of_Modern_Art_At_Royal_Hospital_Kilmainham_-_Dublin_(Ireland)_-_panoramio.jpg",
-    "original": "File:Museum Of Modern Art At Royal Hospital Kilmainham - Dublin (Ireland) - panoramio.jpg"
-  },
   "hero-students": {
     "file": "hero-students.jpg",
     "kind": "photo",
@@ -127,12 +119,6 @@
     "page": "https://commons.wikimedia.org/wiki/File:Marie_Stopes_in_her_laboratory,_1904.jpg",
     "original": "File:Marie Stopes in her laboratory, 1904.jpg"
   },
-  "medical-clinic": {
-    "file": "medical-clinic.svg",
-    "kind": "photo",
-    "theme": "clinic",
-    "note": "svg fallback"
-  },
   "news-1": {
     "file": "news-1.jpg",
     "kind": "photo",
@@ -227,21 +213,6 @@
   },
   "student-3": {
     "file": "student-3.svg",
-    "kind": "portrait",
-    "theme": "portrait"
-  },
-  "doctor-1": {
-    "file": "doctor-1.svg",
-    "kind": "portrait",
-    "theme": "portrait"
-  },
-  "doctor-2": {
-    "file": "doctor-2.svg",
-    "kind": "portrait",
-    "theme": "portrait"
-  },
-  "doctor-3": {
-    "file": "doctor-3.svg",
     "kind": "portrait",
     "theme": "portrait"
   }

@@ -153,7 +153,7 @@ export const jobs: JobOpening[] = [
     postedAt: "2026-07-10",
     deadline: "2026-08-31",
     description:
-      "Lead the Department of Internal Medicine, deliver MBBS teaching, and drive a clinical research portfolio in cardiovascular or metabolic medicine at the Transatlantic Teaching Hospital.",
+      "Lead the Department of Internal Medicine, deliver MBBS teaching, and drive a clinical research portfolio in cardiovascular or metabolic medicine, with clinical duties across our partner hospital network.",
     requirements: ["MD/MBBS and fellowship", "Evidence of research output", "Leadership experience preferred"],
   },
   {

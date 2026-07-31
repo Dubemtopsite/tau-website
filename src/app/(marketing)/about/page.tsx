@@ -49,7 +49,7 @@ const timeline = [
   { year: "2015", title: "University Founded", description: "TAU opens its doors in Umuchukwu with the Faculties of Medicine, Dentistry, and Nursing & Health Sciences." },
   { year: "2016", title: "Biomedical Sciences & Facilities Growth", description: "The Faculty of Biomedical Sciences launches alongside new research laboratories and the first student hostels." },
   { year: "2017", title: "Faculty of Pharmacy Established", description: "The BPharm and PharmD programmes commence, anchored by a network of pharmaceutical science laboratories." },
-  { year: "2018", title: "Public Health & Teaching Hospital", description: "The Faculty of Public Health opens and the Transatlantic Teaching Hospital begins expanding toward 400+ beds." },
+  { year: "2018", title: "Faculty of Public Health", description: "The Faculty of Public Health opens, broadening TAU's reach across the health sciences." },
   { year: "2022", title: "Simulation Centre & Innovation Hub", description: "A state-of-the-art Clinical Simulation Centre and the TAU Innovation Hub are inaugurated." },
   { year: "2026", title: "Global Recognition", description: "International partnerships, landmark research publications, and 100% licensure pass rates cement TAU's reputation." },
 ];
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Today, TAU is home to more than 8,000 students across six faculties, supported by 400+
-                  academic staff, state-of-the-art simulation facilities, and a growing teaching hospital.
+                  academic staff and state-of-the-art simulation and research facilities.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">

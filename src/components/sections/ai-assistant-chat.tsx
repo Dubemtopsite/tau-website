@@ -18,7 +18,7 @@ const SUGGESTED_PROMPTS = [
   "Which programmes does TAU offer?",
   "How can I apply for a scholarship?",
   "Tell me about campus life and hostels.",
-  "How do I book an appointment at the teaching hospital?",
+  "What research does TAU do?",
 ];
 
 function answerFor(query: string) {
@@ -35,23 +35,20 @@ function answerFor(query: string) {
   if (/(campus|hostel|accommodation|life|sport|club|dining)/.test(text)) {
     return "Our Umuchukwu campus has modern hostels, a medical library open 24/7, sports complex, cafeterias, and dozens of student societies. The Student Life page has the full picture — and your first-year hostel allocation is guaranteed for all admitted students.";
   }
-  if (/(hospital|clinic|doctor|appointment|patient|consultant)/.test(text)) {
-    return "The Transatlantic Teaching Hospital is open for outpatient consultations, emergency care, and specialist clinics. You can search our clinicians and departments on the Teaching Hospital pages, and referrals are coordinated through our referral office.";
-  }
   if (/(research|lab|publication|grant|innovation)/.test(text)) {
     return "TAU runs six research centres focused on neglected tropical diseases, cardiovascular health, and more. Our core facilities include molecular labs, imaging, and a clinical simulation centre. Explore Research & Innovation to learn about publications, grants, and partnerships.";
   }
   if (/(contact|email|phone|location|where|visit)/.test(text)) {
     return "You can reach the admissions office at admissions@tau.edu.ng or call +234 800 TAU MEDS. Our campus is at Umuchukwu, Anambra State, Nigeria — the Contact page lists every office and department.";
   }
-  return "Thanks for your question! I can help with admissions, tuition and scholarships, programmes, campus life, the teaching hospital, and research. Try one of the suggested prompts below, or visit our Contact page to speak directly with a member of the team.";
+  return "Thanks for your question! I can help with admissions, tuition and scholarships, programmes, campus life, and research. Try one of the suggested prompts below, or visit our Contact page to speak directly with a member of the team.";
 }
 export function AiAssistantChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: crypto.randomUUID(),
       role: "assistant",
-      text: "Hello, I am the TAU Virtual Assistant. Ask me anything about admissions, programmes, tuition, campus life, or our teaching hospital.",
+      text: "Hello, I am the TAU Virtual Assistant. Ask me anything about admissions, programmes, tuition, campus life, or research at TAU.",
     },
   ]);
   const [draft, setDraft] = useState("");
