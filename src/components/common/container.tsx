@@ -27,7 +27,14 @@ export function Section({
   );
 }
 
-export function BrandMark({ className }: { className?: string }) {
+export function BrandMark({
+  className,
+  tone = "light",
+}: {
+  className?: string;
+  tone?: "light" | "dark";
+}) {
+  const isDark = tone === "dark";
   return (
     <div
       className={cn(
@@ -42,10 +49,21 @@ export function BrandMark({ className }: { className?: string }) {
         </svg>
       </div>
       <div className="leading-tight">
-        <span className="block font-display text-lg font-extrabold tracking-tight text-white">
-          Transatlantic <span className="text-gold">University</span>
+        <span
+          className={cn(
+            "block font-display text-lg font-extrabold tracking-tight",
+            isDark ? "text-navy" : "text-white",
+          )}
+        >
+          Transatlantic{" "}
+          <span className={isDark ? "text-medical" : "text-gold"}>University</span>
         </span>
-        <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70">
+        <span
+          className={cn(
+            "block text-[10px] font-semibold uppercase tracking-[0.2em]",
+            isDark ? "text-muted-foreground" : "text-white/70",
+          )}
+        >
           {siteConfig.shortName}
         </span>
       </div>

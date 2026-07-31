@@ -121,7 +121,7 @@ export function Header() {
               aria-label="Transatlantic University home"
               className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              <BrandMark />
+              <BrandMark tone={solid ? "dark" : "light"} />
             </Link>
 
             <NavigationMenu.Root
@@ -136,7 +136,9 @@ export function Header() {
                     asChild
                     className={cn(
                       "rounded-full px-3.5 py-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                      solid ? "text-navy hover:bg-muted" : "text-white hover:bg-white/10",
+                      solid
+                        ? "text-navy hover:bg-muted"
+                        : "text-white hover:bg-white hover:text-navy data-[state=open]:bg-white data-[state=open]:text-navy",
                       isHome && solid ? "text-navy hover:bg-muted" : "",
                     )}
                   >
@@ -151,7 +153,7 @@ export function Header() {
                         "group flex items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                         solid
                           ? "text-navy hover:bg-muted data-[state=open]:bg-muted"
-                          : "text-white hover:bg-white/10 data-[state=open]:bg-white/10",
+                          : "text-white hover:bg-white hover:text-navy data-[state=open]:bg-white data-[state=open]:text-navy",
                       )}
                     >
                       {group.label}
@@ -178,7 +180,7 @@ export function Header() {
                 size="icon"
                 aria-label="Open search"
                 onClick={() => setSearchOpen(true)}
-                className={cn(solid ? "text-navy hover:bg-muted" : "text-white hover:bg-white/10")}
+                className={cn(solid ? "text-navy hover:bg-muted" : "text-white hover:bg-white hover:text-navy")}
               >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="size-5" aria-hidden="true">
                   <circle cx="11" cy="11" r="7" />
@@ -196,7 +198,7 @@ export function Header() {
                 size="icon"
                 aria-label="Open search"
                 onClick={() => setSearchOpen(true)}
-                className={cn(solid ? "text-navy" : "text-white")}
+                className={cn(solid ? "text-navy hover:bg-muted" : "text-white hover:bg-white hover:text-navy")}
               >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="size-5" aria-hidden="true">
                   <circle cx="11" cy="11" r="7" />
@@ -209,7 +211,7 @@ export function Header() {
                 aria-label="Open menu"
                 aria-expanded={mobileOpen}
                 onClick={() => setMobileOpen(true)}
-                className={cn(solid ? "text-navy" : "text-white")}
+                className={cn(solid ? "text-navy hover:bg-muted" : "text-white hover:bg-white hover:text-navy")}
               >
                 <Menu className="size-6" aria-hidden="true" />
               </Button>
@@ -272,10 +274,12 @@ function MegaMenuItem({ item, active }: { item: NavLinkItem; active?: boolean })
           <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-medical/10 text-medical transition-colors group-hover/item:bg-medical group-hover/item:text-white">
             {Icon ? <Icon className="size-4" aria-hidden="true" /> : null}
           </span>
-          <span className="text-sm font-semibold text-navy">{item.label}</span>
+          <span className="text-sm font-semibold text-navy transition-colors group-hover/item:text-medical">
+            {item.label}
+          </span>
         </span>
         {item.description ? (
-          <span className="mt-1 block pl-10 text-xs leading-relaxed text-muted-foreground">
+          <span className="mt-1 block pl-10 text-xs leading-relaxed text-muted-foreground transition-colors group-hover/item:text-foreground/80">
             {item.description}
           </span>
         ) : null}
